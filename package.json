@@ -59,12 +59,11 @@
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts'",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "cli:start": "npm run build && node --no-warnings dist/interfaces/commandLineInterface.js",
     "evals:load": "npm run build && node --no-warnings dist/evals/createInputs.js",
     "evals:start": "npm run build && node --no-warnings dist/evals/evaluatorChain.js",
     "slack:start": "npm run build && node dist/interfaces/slackBot.js",
-    "docker:build": "docker build -t ollychat .",
-    "docker:run:slack": "docker run -e APP_MODE=slack ollychat",
+    "docker:build": "docker build -t langchain-slack-bot .",
+    "docker:run": "docker run langchain-slack-bot",
     "prepare": "husky"
   }
 }

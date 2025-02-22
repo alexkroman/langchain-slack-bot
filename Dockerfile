@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set the working directory inside the container
-WORKDIR /ollychat
+WORKDIR /langchain-slack-bot
 
 # Copy package.json and package-lock.json (if available) first
 COPY package*.json ./
@@ -16,7 +16,5 @@ COPY . .
 # Expose the port your app runs on (if applicable)
 EXPOSE 3000
 
-ENV APP_MODE="cli"
-
 # Define the command to run your app
-CMD ["sh", "-c", "if [ \"$APP_MODE\" = 'cli' ]; then npm run cli:start; else npm run slack:start; fi"]
+CMD ["sh", "-c", "npm run slack:start"]

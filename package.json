@@ -1,17 +1,17 @@
 {
-  "name": "ollychat",
+  "name": "langchain-slack-bot",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexkroman/ollychat.git"
+    "url": "git+https://github.com/alexkroman/langchain-slack-bot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexkroman/ollychat/issues"
+    "url": "https://github.com/alexkroman/langchain-slack-bot/issues"
   },
-  "homepage": "https://github.com/alexkroman/ollychat#readme",
+  "homepage": "https://github.com/alexkroman/langchain-slack-bot#readme",
   "description": "",
   "dependencies": {
     "@langchain/anthropic": "^0.3.13",

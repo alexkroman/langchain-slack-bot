@@ -25,8 +25,8 @@ const runGraph = async (
 async function runEval() {
   try {
     await evaluate(runGraph, {
-      data: "Ollychat",
-      experimentPrefix: "Ask Ollychat question",
+      data: "langchain-slack-bot",
+      experimentPrefix: "Ask langchain-slack-bot a question",
       maxConcurrency: 1,
     });
   } catch (error) {

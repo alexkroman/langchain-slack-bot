@@ -11,7 +11,7 @@ const client = new Client({
   apiUrl: config.langSmithEndpoint,
 });
 
-const datasetName = "Ollychat";
+const datasetName = "langchain-slack-bot";
 
 const existingDatasets = [];
 for await (const dataset of client.listDatasets()) {

@@ -31,12 +31,10 @@ export const config = {
   langSmithEndpoint: langsmithTracing
     ? requireEnv("LANGSMITH_ENDPOINT")
     : "https://api.smith.langchain.com",
-  langSmithApiKey: langsmithTracing
-    ? requireEnv("LANGSMITH_API_KEY")
-    : "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",
+  langSmithApiKey: langsmithTracing ? requireEnv("LANGSMITH_API_KEY") : "",
   langSmithProject: langsmithTracing
     ? requireEnv("LANGSMITH_PROJECT")
-    : "Ollychat",
+    : "langchain-slack-bot",
   logging: !process.execArgv.includes("--no-warnings"),
   configurable: { thread_id: uuidv4(), recursionLimit: graphRecursionLimit },
 };

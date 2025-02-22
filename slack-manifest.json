@@ -1,7 +1,7 @@
 {
   "display_information": {
-    "name": "ollychat",
-    "description": "OllyChat",
+    "name": "slack-bot",
+    "description": "Slack Bot",
     "background_color": "#2f3854"
   },
   "features": {

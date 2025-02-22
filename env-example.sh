@@ -12,15 +12,8 @@ TAVILY_API_KEY=
 
 # Recommend leaving as is
 GRAPH_RECURSION_LIMIT=5
-
-# You can set LANGSMITH_TRACING to true to help me (alex) diagnose issues you are having with the app
 LANGSMITH_TRACING=false
 LANGCHAIN_VERBOSE=false
-
-# This is the API key for OllyChat so users can send up LLM traces when they run into issues
-LANGSMITH_API_KEY=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
-LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
-LANGSMITH_PROJECT="ollychat"
 
 # Only needed for deploying Ollychat as a Slack bot
 SLACK_BOT_TOKEN=

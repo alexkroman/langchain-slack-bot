@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                        // Modern JavaScript output (adjust based on your needs)
+    "module": "esnext",                        // Node.js module resolution
+    "outDir": "./dist",                        // Output folder for compiled files
+    "rootDir": "src/",                            // Root folder for TypeScript files
+    "strict": true,                            // Enable all strict type-checking options
+    "esModuleInterop": true,                   // Support for CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true,  // Ensure consistent file casing
+    "skipLibCheck": true,                      // Skip type checks on declaration files
+
+    /* Type Checking */
+    "strictNullChecks": true,                  // Disallow `null` and `undefined` where not explicitly allowed
+    "noImplicitAny": true,                     // Warn on variables with `any` type
+    "noImplicitThis": true,                    // Warn on `this` with implicit type `any`
+    "alwaysStrict": true,                      // Parse in strict mode and emit `"use strict"`
+
+    /* Module Resolution */
+    "moduleResolution": "node",               // Resolve modules in Node.js style
+    "resolveJsonModule": true,                // Allow importing JSON files
+    "baseUrl": ".",                           // Base directory for resolving paths
+    "paths": {                                // Alias paths for cleaner imports
+      "@/*": ["src/*"]
+    },
+
+    /* Output Options */
+    "declaration": true,                      // Emit declaration files for TypeScript
+    "sourceMap": true,                        // Emit source maps for debugging
+    "removeComments": true,                   // Remove comments in output
+
+    /* Additional Options */
+    "allowSyntheticDefaultImports": true,     // Allow default imports from modules without default exports
+    "experimentalDecorators": true,           // Enable decorators (if using frameworks like NestJS)
+    "emitDecoratorMetadata": true ,           // Emit metadata for decorators
+  },
+  "include": ["src/**/*"],
+  "incremental": true,
+  "tsBuildInfoFile": "./.tsbuildinfo",
+  "exclude": ["node_modules", "dist"]         // Exclude build and dependency directories
+} 

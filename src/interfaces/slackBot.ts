@@ -36,9 +36,7 @@ app.event("app_mention", async ({ event, say }) => {
     });
   } catch (error) {
     console.error("An error occurred:", error);
-    await say(
-      "Sorry, I encountered an error while generating the PromQL query. Please try again later.",
-    );
+    await say("Sorry, I encountered an error. Please try again later.");
   }
 });
 

@@ -16,12 +16,15 @@ const modelBaseUrl = process.env.MODEL_BASE_URL || "http://localhost:11434";
 const tavilyEnabled = !!tavilyApiKey;
 
 export const config = {
+  slackBotToken: requireEnv("SLACK_BOT_TOKEN"),
+  slackSigningSecret: requireEnv("SLACK_SIGNING_SECRET"),
+  slackAppToken: requireEnv("SLACK_APP_TOKEN"),
+  port: Number(requireEnv("PORT")),
   modelProvider,
   modelApiKey,
   model: requireEnv("MODEL"),
   prometheusUrl: requireEnv("PROMETHEUS_URL"),
   tavilyApiKey,
-  telemetry: requireEnv("TELEMETRY"),
   tavilyEnabled,
   modelBaseUrl,
   langsmithTracing,

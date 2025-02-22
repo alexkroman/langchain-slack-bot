@@ -1,7 +1,7 @@
 import slack from "@slack/bolt";
 import slackifyMarkdown from "slackify-markdown";
-import { answerQuestion } from "../ollychat.js";
-import { config } from "../config/slackConfig.js";
+import { answerQuestion } from "../app.js";
+import { config } from "../config/config.js";
 
 const { App } = slack;
 

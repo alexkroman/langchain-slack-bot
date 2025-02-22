@@ -14,8 +14,10 @@
   "homepage": "https://github.com/alexkroman/ollychat#readme",
   "description": "",
   "dependencies": {
+    "@langchain/anthropic": "^0.3.13",
     "@langchain/community": "^0.3.32",
     "@langchain/langgraph": "^0.2.48",
+    "@langchain/ollama": "^0.2.0",
     "@slack/bolt": "^4.2.0",
     "dotenv": "^16.4.7",
     "fs": "^0.0.1-security",
